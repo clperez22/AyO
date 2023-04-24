@@ -1,0 +1,149 @@
+.inicio{
+    width: 375px;
+    height: 667px;
+    background-color: rgb(194, 193, 193);
+    padding: 0.5rem;
+}
+.header{
+    border: solid 1rem black;
+}
+.nombre{
+    font-size: 0.5rem;
+    color: blue;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.5rem 0 1rem 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 0.01rem black;
+}
+.homeimg{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.quiens{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.5rem 2rem 1rem 4rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 0.01rem black;
+}
+.ig{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.5rem 2rem 1rem 6rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 0.01rem black;
+}
+.kar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.5rem 2rem 1rem 8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 0.01rem black;
+}
+.imgin{
+    width: 9.3rem;
+    height: 5rem;
+    margin-top: 3rem;
+    border: solid 0.01rem black;
+}
+.imginimg{
+    width: 9.3rem;
+    height: 5rem;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0 0 2.5rem;
+    width: 4rem;
+    height: 8rem;
+    border: solid 0.01rem black;
+    background-color: yellow;
+}
+.menu1{
+    width: 3.5rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0.4rem 0.1rem 0.4rem 0.2rem;
+}
+.cl1{
+    width: 3rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0 0.4rem 0 0.4rem;
+}
+.cl2{
+    width: 3rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0.4rem 0.4rem 0 0.4rem;
+}
+.cl3{
+    width: 3rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0.4rem 0.4rem 0 0.4rem;
+}
+.cl4{
+    width: 3rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0.4rem 0.4rem 0 0.4rem;
+}
+.marcas{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.5rem 2rem 0 5rem;
+    width: 4rem;
+    height: 9rem;
+    border: solid 0.01rem black;
+    background-color: yellow;
+}
+.marcas1{
+    width: 3.5rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0.4rem 0.1rem 0.4rem 0.2rem;
+}
+.mo1{
+    width: 3rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0 0.4rem 0 0.4rem;
+}
+.mo2{
+    width: 3rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0.4rem 0.4rem 0 0.4rem;
+}
+.mo3{
+    width: 3rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0.4rem 0.4rem 0 0.4rem;
+}
+.mo4{
+    width: 3rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0.4rem 0.4rem 0 0.4rem;
+}
+.mo5{
+    width: 3rem;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: 0.4rem 0.4rem 0 0.4rem;
+}
