@@ -1,5 +1,5 @@
 let contenido_baner=`
-<img class="imginimg" src="https://media.istockphoto.com/id/1183354223/es/vector/cargando-icono-de-l%C3%ADnea-vectorial-aislada-cargando-ui-ux-pictogram-vector.jpg?s=170667a&w=0&k=20&c=97cqEhzUzwbMlb9Tcqqrd7o2fANcnv5BO34bZ9dHTvA=" alt="">
+<img class="imginimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Black_x.svg/896px-Black_x.svg.png" alt="">
 
 `;
 
