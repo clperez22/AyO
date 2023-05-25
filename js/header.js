@@ -1,5 +1,16 @@
 let contenido=`
+<section>
+
+<img class= "imglogo"src="https://cdn.icon-icons.com/icons2/3106/PNG/512/world_worldwide_network_globe_icon_191674.png" alt="">
 <h3 class="nombre">AyO</h3>
+</section>
+
+<section class="luo">
+<img class="luoimg" src="https://cdn.icon-icons.com/icons2/2469/PNG/512/magnifier_magnifying_glass_icon_149435.png" alt="">
+</section>
+
+
+
 <section class="home">
 <img class="homeimg" src="https://cdn-icons-png.flaticon.com/512/63/63633.png" alt="">
 </section>

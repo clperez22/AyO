@@ -1,8 +1,20 @@
-let contenido_baner=`
-<img class="imginimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Black_x.svg/896px-Black_x.svg.png" alt="">
+let apiUrl = " https://api.thecatapi.com/v1/images/search" 
+async function actualizarGato(api){
 
-`;
+    let obtenerGato = await fetch(api); 
 
-let baner = document.querySelector(".imgin");
+    let dato = await obtenerGato.json(); 
+    buscar_dato(dato);
+}
+    actualizarGato(apiUrl);
 
-baner.innerHTML = contenido_baner;
+function buscar_dato(dato){
+    let url = dato[0].url;
+        
+        let caja = document.querySelector(".imgin");
+        dato.forEach(element => {
+       let div = document.createElement("div");
+        div.innerHTML = `<img class="imagenn" src="${element.url}">`;
+        caja.appendChild(div);
+    });
+}
