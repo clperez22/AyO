@@ -1,7 +1,5 @@
 let contenido_menu=`
-<section class="menu1">
-<h1 class="men">Menú</h1>
-</section>
+
 
 <section class="cl1">
 <h1 class="menn">Iphone</h1>

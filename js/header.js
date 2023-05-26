@@ -1,7 +1,6 @@
 let contenido=`
 <section>
 
-<img class= "imglogo"src="https://cdn.icon-icons.com/icons2/3106/PNG/512/world_worldwide_network_globe_icon_191674.png" alt="">
 <h3 class="nombre">AyO</h3>
 </section>
 
