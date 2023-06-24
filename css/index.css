@@ -71,8 +71,6 @@
         margin-top: 3rem;
         margin-left: 3rem;
         display: flex;
-        
-    
     }
     .imagenn{
         width: 15rem;
@@ -94,37 +92,42 @@
         border: solid 0.01rem black;
         
     }
-    .cl1{
+    .cl1 button{
         width: 5rem;
         height: 2rem;
         border: solid 0.05rem black;
         margin: 1.5rem 0.4rem 0rem 2rem ;
-        color: wheat;
         background-color: rgb(0, 0, 0);
+        font-family: 'Courier New', Courier, monospace;
+        color: aliceblue;
     }
-    .cl2{
+ 
+    .cl2 button{
         width: 5rem;
         height: 2rem;
         border: solid 0.05rem black;
         margin: 1.5rem 0.4rem 1.5rem 3rem;
         color: wheat;
         background-color: rgb(0, 0, 0);
+        font-family: 'Courier New', Courier, monospace;
     }
-    .cl3{
+    .cl3 button{
         width: 5rem;
         height: 2rem;
         border: solid 0.05rem black;
         margin: 1.5rem 0 1.5rem 4rem;
         color: wheat;
         background-color: rgb(0, 0, 0);
+        font-family: 'Courier New', Courier, monospace;
     }
-    .cl4{
+    .cl4 button{
         width: 5rem;
         height: 2rem;
         border: solid 0.05rem black;
         margin: 1.5rem 0 1.5rem 4rem;
         color: wheat;
         background-color: rgb(0, 0, 0);
+        font-family: 'Courier New', Courier, monospace;
     }
     .menn{
         font-size: 0.8rem;

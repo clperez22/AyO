@@ -1,0 +1,48 @@
+.tapaderas{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px; 
+  }
+  .titulo{
+    margin-left: 8rem;
+  }
+  .item {
+    width: 24rem;
+    height: 10rem; 
+    margin: 10px;
+    margin-top: 2rem;
+    background-color: rgb(170, 187, 245); 
+    border-radius: 2.5rem;
+  }
+  .nombres{ /*NOMBRES DE CADA RECETA*/
+    font-size: 0.7rem;
+    margin-left: 8rem;
+    margin-top: -6rem;
+    text-align: center;
+  }
+  .descripcion{
+    font-size: 0.6rem;
+    margin-left: 10rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    text-align: justify;
+
+  }
+  .precios{
+    font-size: 0.6rem;
+    margin-left: 10rem;
+    margin-right: 0.5rem;
+  }
+  .marcas{
+    font-size: 0.6rem;
+    margin-left: 10rem;
+    margin-right: 0.5rem;
+  }
+  .imagenes_re{ /*imagen de cada receta*/
+    width: 7rem;
+    height: 7rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+  }
+ 

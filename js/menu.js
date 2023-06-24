@@ -1,21 +1,37 @@
 let contenido_menu=`
 
-
 <section class="cl1">
-<h1 class="menn">Iphone</h1>
+<button >
+     <a href="./tapaderas.html">
+            <h1 class="menn">Tapaderas</h1>
+            </a>
+        </button>
+
 </section>
 
 
 <section class="cl2">
-<h1 class="menn">Sanmsung</h1>
+<button >
+     <a href="./pantallas.html">
+            <h1 class="menn">Pantallas</h1>
+            </a>
+        </button>
 </section>
 
 <section class="cl3">
-<h1 class="menn">Nokia</h1>
+<button >
+     <a href="./vidrios.html">
+            <h1 class="menn">Vidrios</h1>
+            </a>
+        </button>
 </section>
 
 <section class="cl4">
-<h1 class="menn">Xiomi</h1>
+<button >
+     <a href="./baterias.html">
+            <h1 class="menn">Baterias</h1>
+            </a>
+        </button>
 </section>
 `;
 
