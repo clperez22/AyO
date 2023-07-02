@@ -1,308 +1,188 @@
-    html{
-        max-width: 1366px;
-        background-color: rgb(91, 214, 33);
+html {
+    background-color: rgb(91, 214, 33);
+  }
+  
+  .nombre {
+    font-size: 2rem;
+    color: rgb(0, 26, 255);
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .luo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.5rem 2rem 1rem 1rem;
+    border: solid 0.01rem black;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 0.5rem 0 1rem 12rem;
+    width: 1rem;
+    height: 1rem;
+    border: solid 0.01rem black;
+  }
+  
+  .homeimg {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.1rem;
+  }
+  
+  .quiens {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.5rem 2rem 1rem 14rem;
+    width: 1rem;
+    height: 1rem;
+    border: solid 0.01rem black;
+  }
+  
+  .ig {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.5rem 2rem 1rem 16rem;
+    width: 1rem;
+    height: 1rem;
+    border: solid 0.01rem black;
+  }
+  
+  .kar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.5rem 2rem 1rem 18rem;
+    width: 1rem;
+    height: 1rem;
+    border: solid 0.01rem black;
+  }
+  
+  .imgin {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: flex;
+  }
+  
+  .imagenn {
+    width: 4.5rem;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    margin-top: 2rem;
+    margin-left: 0.4rem;
+    border: solid 0.01rem black;
+  }
+  
+  .menu button {
+    flex: 1;
+    height: 2rem;
+    border: solid 0.05rem black;
+    margin: 1.5rem 0.4rem;
+    color: wheat;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .menn {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .pie {
+    width: 100%;
+    background-color: gray;
+    border: solid black 0.05rem;
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nombre {
+      font-size: 1rem;
+      margin-left: 3rem;
     }
+  
+    .luo {
+        margin-left: 0.5rem;
+        width: 1rem;
+        height: 1rem;
+      }
 
-    .nombre{
-        font-size: 2rem;
-        color: rgb(0, 26, 255);
-        
-        margin-top: 0.5rem;
-        margin-left: 1rem;
-        display: flex;
-        justify-content:left;   
-    }
-    .luo{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        margin: 0.5rem 2rem 1rem 5rem;
-        border: solid 0.01rem black;
-        
-        width: 1rem;
-        height: 1rem;
-    }
-
-    .home{
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        margin: 0.5rem 0 1rem 28rem;
-        width: 1rem;
-        height: 1rem;
-        border: solid 0.01rem black;
-        
-    }
-    .homeimg{
-        width: 0.8rem;
-        height:0.8rem;
-        margin: 0.1rem ;
-    }
-    .quiens{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        margin: 0.5rem 2rem 1rem 30rem;
-        width: 1rem;
-        height: 1rem;
-        border: solid 0.01rem black;
-    }
-    .ig{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        margin: 0.5rem 2rem 1rem 32rem;
-        width: 1rem;
-        height: 1rem;
-        border: solid 0.01rem black;
-    }
-    .kar{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        margin: 0.5rem 2rem 1rem 34rem;
-        width: 1rem;
-        height: 1rem;
-        border: solid 0.01rem black;
-    }
-    .imgin{
-        width: 15rem;
-        height: 8rem;
-        margin-top: 3rem;
+    .home {
         margin-left: 3rem;
-        display: flex;
-    }
-    .imagenn{
-        width: 15rem;
-        height: 8rem;
-        
-        margin-right: 0.5rem;
-        
-    }
-    .menu{
-        display: flex;
-        flex-direction: row;
-      
-        width: auto;
-        height: 100%;
-        
-        margin-top: 2rem;
-        margin-left: 0.4rem;
-    
-        border: solid 0.01rem black;
-        
-    }
-    .cl1 button{
-        width: 5rem;
-        height: 2rem;
-        border: solid 0.05rem black;
-        margin: 1.5rem 0.4rem 0rem 2rem ;
-        background-color: rgb(0, 0, 0);
-        font-family: 'Courier New', Courier, monospace;
-        color: aliceblue;
-    }
- 
-    .cl2 button{
-        width: 5rem;
-        height: 2rem;
-        border: solid 0.05rem black;
-        margin: 1.5rem 0.4rem 1.5rem 3rem;
-        color: wheat;
-        background-color: rgb(0, 0, 0);
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .cl3 button{
-        width: 5rem;
-        height: 2rem;
-        border: solid 0.05rem black;
-        margin: 1.5rem 0 1.5rem 4rem;
-        color: wheat;
-        background-color: rgb(0, 0, 0);
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .cl4 button{
-        width: 5rem;
-        height: 2rem;
-        border: solid 0.05rem black;
-        margin: 1.5rem 0 1.5rem 4rem;
-        color: wheat;
-        background-color: rgb(0, 0, 0);
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .menn{
-        font-size: 0.8rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0.5rem;
-    }
-    .pie{
-        width: 36rem;
-        height: 100%;
-        background-color: gray;
-        border: solid black 0.05rem;
-        margin-top: 1rem;
-        font-size: 0.5rem;
-        margin-left: 0.3rem;
-       text-align: center;
-    }
-   
+        width: 1rem;
+        height: 1rem;
+      }
 
+    .quiens {
+        margin-left: 4.5rem;
+        width: 1rem;
+        height: 1rem;
+      }
 
+    .ig {
+        margin-left: 6rem;
+        width: 1rem;
+        height: 1rem;
+      }
 
-@media screen and (max-width: 375px) {
-    html{
-        max-width: 375px;
-        background-color: rgb(205, 206, 207);
+    .kar {
+        margin-left: 7.5rem;
+      width: 1rem;
+      height: 1rem;
     }
-    
-    .nombre{
-        font-size: 1rem;
-        color: rgb(0, 26, 255);
-        
-        margin-top: 0.5rem;
-        margin-left: 1rem;
-        margin-bottom: 0.5rem;
+  
+    .imgin {
+      margin-top: 3rem;
+      margin-left: 0.1rem;
+      width: 9rem;
+     
     }
-        .luo{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            margin: 0.5rem 2rem 1rem 2rem;
-            border: solid 0.01rem black;
-            
-            width: 0.5rem;
-            height: 0.5rem;
-        }
-    
-        .home{
-            display: flex;
-            flex-direction: row;
-            position: absolute;
-            margin: 0.5rem 0 0 6rem;
-            width: 0.5rem;
-            height: 0.5rem;
-            border: solid 0.01rem black;
-            
-        }
-        .homeimg{
-            width: 0.4rem;
-            height:0.4rem;
-            margin-top: 0.01rem;
-            margin-left: -0.0rem;
-           
-        }
-        .quiens{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            margin: 0.5rem 2rem 1rem 7rem;
-            width: 0.5rem;
-            height: 0.5rem;
-            border: solid 0.01rem black;
-        }
-        .ig{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            margin: 0.5rem 2rem 1rem 8rem;
-            width: 0.5rem;
-            height: 0.5rem;
-            border: solid 0.01rem black;
-        }
-        .kar{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            margin: 0.5rem 2rem 1rem 9rem;
-            width: 0.5rem;
-            height: 0.5rem;
-            border: solid 0.01rem black;
-        }
-        .imgin{
-            width: 5rem;
-            height: 5rem;
-            margin-top: 3rem;
-            margin-left: 1rem;
-            display: flex;
-            
-        
-        }
-        .imagenn{
-            width: 4rem;
-            height: 4rem;
-            
-            margin-right: 0.5rem;
-            
-        }
-        .menu{
-            display: flex;
-            flex-direction: row;
-          
-            width: 9.3rem;
-            height: 2rem;
-            margin-top: 0.5rem;
-            margin-left: 0.5rem;
-            
-            border: solid 0.01rem black;
-            
-        }
-        .cl1{
-            width: 1.5rem;
-            height: 1rem;
-            border: solid 0.05rem black;
-            margin: 0.5rem 0 0rem 1rem ;
-            padding-top: 0.4rem;
-            color: wheat;
-            background-color: rgb(0, 0, 0);
-        }
-        .cl2{
-            width: 1.5rem;
-            height: 1rem;
-            border: solid 0.05rem black;
-            margin: 0.5rem 0 0rem 0.5rem ;
-            padding-top: 0.4rem;
-            color: wheat;
-            background-color: rgb(0, 0, 0);
-        }
-        .cl3{
-            width: 1.5rem;
-            height: 1rem;
-            border: solid 0.05rem black;
-            margin: 0.5rem 0 0rem 0.5rem;
-            padding-top: 0.4rem;
-            color: wheat;
-            background-color: rgb(0, 0, 0);
-        }
-        .cl4{
-            width: 1.5rem;
-            height: 1rem;
-            border: solid 0.05rem black;
-            margin: 0.5rem 0 0rem 0.5rem ;
-            padding-top: 0.4rem;
-            color: wheat;
-            background-color: rgb(0, 0, 0);
-        }
-        .menn{
-            font-size: 0.3rem;
-            margin-top: -0.1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-           
-        }
-        .pie{
-            width: 10rem;
-            height: 100%;
-            background-color: gray;
-            border: solid black 0.05rem;
-            margin-top: 3rem;
-            font-size: 0.5rem;
-            margin-left: 0.1rem;
-            text-align: center;
-        }
-    
-}
-
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+    }
+  
+    .menu button {
+      width: 80%;
+      margin: 0.5rem;
+    }
+  
+    .menn {
+      font-size: 0.7rem;
+    }
+  
+    .pie {
+      font-size: 1rem;
+      margin-left: 0.5rem;
+      width: 9rem;
+      height: 5rem;
+      background-color: aqua;
+    }
+  }
   
