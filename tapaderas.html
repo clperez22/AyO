@@ -18,10 +18,17 @@
         <img class="homeimg" src="https://cdn-icons-png.flaticon.com/512/63/63633.png" alt="">
         </section>
     </a>
-    <h1 class="titulo">Tapaderas</h1>
+    
+    <h1 class="titulo">Buscador de Tapas</h1>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar por nombre...">
+        <button onclick="buscar()">Buscar</button>
+    </div>
+    <div id="results-container"></div>
 
     <div class="tapaderas"></div>
   
+   
 </body>
 <script src="./js/DTapaderas.js" type="module"></script>
 <script src="./js/tapa.js" type="module"></script>

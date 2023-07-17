@@ -344,3 +344,100 @@ export let tapas = [
     },
 
 ];
+
+/**********************************Buscador****************************************** */
+
+
+
+function buscarPorCategoria(categoria) {
+    return tapas.filter((tapa) => tapa.categoria.toLowerCase() === categoria.toLowerCase());
+}
+
+function buscarPorMarca(marca) {
+    return tapas.filter((tapa) => tapa.marca.toLowerCase() === marca.toLowerCase());
+}
+
+function buscarPorNombre(nombre) {
+    return tapas.filter((tapa) => tapa.nombre.toLowerCase().includes(nombre.toLowerCase()));
+}
+
+function buscarPorPrecio(precio) {
+    return tapas.filter((tapa) => tapa.precio.toLowerCase().includes(precio.toLowerCase()));
+}
+
+
+// Ejemplo de uso
+const categoria = 'Baterias';
+const marca = 'Apple';
+const nombre = 'iPhone';
+const precio = 'Q200.00';
+
+const resultadosCategoria = buscarPorCategoria(categoria);
+console.log('Resultados por categoría:', resultadosCategoria);
+
+const resultadosMarca = buscarPorMarca(marca);
+console.log('Resultados por marca:', resultadosMarca);
+
+const resultadosNombre = buscarPorNombre(nombre);
+console.log('Resultados por nombre:', resultadosNombre);
+
+const resultadosPrecio = buscarPorPrecio(precio);
+console.log('Resultados por precio:', resultadosPrecio);
+
+
+window.onload = function() {
+    const searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            buscar();
+        }
+    });
+};
+
+function buscar() {
+    const query = document.getElementById('search-input').value;
+    const resultsContainer = document.getElementById('results-container');
+    
+    // Borrar historial de búsqueda anterior
+    while (resultsContainer.firstChild) {
+        resultsContainer.firstChild.remove();
+    }
+
+    const resultadosNombre = buscarPorNombre(query);
+    if (resultadosNombre.length > 0) {
+        resultadosNombre.forEach(function(resultado) {
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('result-item');
+
+            const img = document.createElement('img');
+            img.textContent = resultado.img;
+            resultItem.appendChild(img);
+
+            const nombre = document.createElement('h3');
+            nombre.textContent = resultado.nombre;
+            resultItem.appendChild(nombre);
+
+            const categoria = document.createElement('p');
+            categoria.textContent = resultado.categoria;
+            resultItem.appendChild(categoria);
+
+            const precio = document.createElement('p');
+            precio.textContent = resultado.precio;
+            resultItem.appendChild(precio);
+
+            const descripcion = document.createElement('p');
+            descripcion.textContent = resultado.descripcion;
+            resultItem.appendChild(descripcion);
+
+            const marca = document.createElement('p');
+            marca.textContent = resultado.marca;
+            resultItem.appendChild(marca);
+
+            resultsContainer.appendChild(resultItem);
+        });
+    } else {
+        const noResults = document.createElement('p');
+        noResults.textContent = 'No se encontraron resultados.';
+        resultsContainer.appendChild(noResults);
+    }
+}

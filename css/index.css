@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(91, 214, 33);
+    background-color: rgb(168, 209, 243);
   }
   
   .nombre {
@@ -25,23 +25,23 @@ html {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: 0.5rem 0 1rem 12rem;
+    margin-top: -10rem;
     width: 1rem;
     height: 1rem;
     border: solid 0.01rem black;
   }
   
   .homeimg {
-    width: 0.8rem;
+    width: 0.8rem;  
     height: 0.8rem;
-    margin: 0.1rem;
+    margin: -1rem;
   }
   
   .quiens {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin: 0.5rem 2rem 1rem 14rem;
+    margin: -0.5rem 2rem 1rem 14rem;
     width: 1rem;
     height: 1rem;
     border: solid 0.01rem black;
@@ -51,7 +51,7 @@ html {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin: 0.5rem 2rem 1rem 16rem;
+    margin: -1.5rem 2rem 1rem 17rem;
     width: 1rem;
     height: 1rem;
     border: solid 0.01rem black;
@@ -61,7 +61,7 @@ html {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin: 0.5rem 2rem 1rem 18rem;
+    margin: 1rem 2rem 1rem 18rem;
     width: 1rem;
     height: 1rem;
     border: solid 0.01rem black;
@@ -97,7 +97,7 @@ html {
     border: solid 0.05rem black;
     margin: 1.5rem 0.4rem;
     color: wheat;
-    background-color: rgb(0, 0, 0);
+ 
     font-family: 'Courier New', Courier, monospace;
   }
   
@@ -107,22 +107,50 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
-  }
+    text-decoration: none;
+}
   
   .pie {
     width: 100%;
+    height: auto;
     background-color: gray;
     border: solid black 0.05rem;
     margin-top: 1rem;
     font-size: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
+  }
+  
+  .ayuda {
+    text-align: center;
+  }
+  .comentario-form {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .comentario-form label,
+  .comentario-form textarea,
+  .comentario-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .comentario-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
   }
   
   @media screen and (max-width: 768px) {
     .nombre {
       font-size: 1rem;
       margin-left: 3rem;
+
     }
   
     .luo {
@@ -183,6 +211,10 @@ html {
       width: 9rem;
       height: 5rem;
       background-color: aqua;
+    }
+    .comentario-form {
+      max-width: 100%;
+      padding: 10px;
     }
   }
   
