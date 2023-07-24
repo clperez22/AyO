@@ -12,17 +12,68 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-  
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap" rel="stylesheet">  
 </head>
 <body>
+
    <section class="inicio">
-
    
+      
+       
     <header class="ico"></header><!--Todoos los iconos del inicio-->
+  
+  
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Ingrese el nombre del producto...">
+        <div id="results"></div>
+    </div>
 
-    
-    <section class="imgin"></section><!--baner de imagenes intercambiables-->
+    <!-- Ventana emergente -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-img" class="modal-img" src="" alt="Imagen del producto">
+        <h3 id="modal-nombre" class="modal-nombre"></h3>
+        <p id="modal-descripcion" class="modal-descripcion"></p>
+        <input type="number" min="1" value="1" id="cantidad">
+        <button class="agregarCarrito" data-nombre="${producto.nombre}" data-precio="${producto.precio}">Agregar al carrito</button>
+   
+      </div>
+    </div>
+
+
+    <section>
+      <section class="kar">
+        <div class="carrito-icon" id="carrito-icon">
+          <img class="karimg" src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="">
+          <!-- Agrega aquí el icono de carrito que desees usar -->
+          <!-- Por ejemplo, puedes usar un icono de Font Awesome: -->
+          <!-- <i class="fas fa-shopping-cart"></i> -->
+        </div>
+      </section>
+    </section>
+
+    <!-- Ventana emergente del carrito -->
+    <div id="carrito-modal" class="modal">
+      
+      <div class="modal-content">
+        <span class="carrito-close">&times;</span>
+        <h3 class="titulo_carro">Carrito de Compras</h3>
+        <div id="carrito-contenido"></div>
+        <div id="carrito-total"></div>
+      </div>
+    </div>
+
+    <div
+     class="carrito-total"></div>
+  
+    <section class="imgin">
+      <img class="imagenn" src="https://m.media-amazon.com/images/I/31vZT3juBJL.jpg" alt="">
+      <img class="imagenn2" src="https://m.media-amazon.com/images/I/61X3ettE8NS.jpg" alt="">
+    </section><!--baner de imagenes intercambiables-->
 
 
     <section class="menu"></section><!--Productos de la tienda-->
@@ -34,33 +85,32 @@
          
             <h1 class="ayuda">Help</h1>
 
-         
+        </section>
 
         <section class="quiens">
-        <img class="quiensimg" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="">
+          <img class="quiensimg" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="">
         </section>
-        </section>
-        
+
         <a href="https://www.instagram.com/">
-        <section>
-        <section class="ig">
-        <img class="igimg" src="https://icones.pro/wp-content/uploads/2021/02/instagram-icone-noir.png" alt="">
-        </section>
-        </section>
+          <section>
+            <section class="ig">
+              <img class="igimg" src="https://icones.pro/wp-content/uploads/2021/02/instagram-icone-noir.png" alt="">
+            </section>
+          </section>
         </a>    
         
-     
-     </section>
+     </footer>
 
-    </footer>
+  </section>
 
-</section>
 </body>
 
 <!--Archivos js-->
-    <script src="./js/header.js"></script>
-    <script src="./js/Banner.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/marcas.js"></script>
-</html>
+<!-- Archivos js -->
+<script src="./js/bases_completa.js"></script>
+<script src="./js/buscador.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/Banner.js"></script>
+<script src="./js/menu.js"></script>
 
+</html>

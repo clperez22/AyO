@@ -1,12 +1,16 @@
+@media (max-width: 375px) {
 html {
     background-color: rgb(168, 209, 243);
+    padding: 2rem;
   }
   
   .nombre {
+    font-family: 'Coiny';
     font-size: 2rem;
     color: rgb(0, 26, 255);
-    margin-top: 0.5rem;
-    margin-left: 1rem;
+    margin-top: -1rem;
+    margin-left: 3rem;
+    text-align: center;
     display: flex;
     justify-content: left;
   }
@@ -41,7 +45,7 @@ html {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin: -0.5rem 2rem 1rem 14rem;
+    margin: -2rem 2rem 1rem 2rem;
     width: 1rem;
     height: 1rem;
     border: solid 0.01rem black;
@@ -51,17 +55,17 @@ html {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin: -1.5rem 2rem 1rem 17rem;
+    margin: -2rem 2rem 1rem 7rem;
     width: 1rem;
     height: 1rem;
     border: solid 0.01rem black;
   }
   
-  .kar {
+  .karimg {
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin: 1rem 2rem 1rem 18rem;
+    margin: 0.5rem 2rem 1rem 8rem;
     width: 1rem;
     height: 1rem;
     border: solid 0.01rem black;
@@ -70,8 +74,8 @@ html {
   .imgin {
     width: 100%;
     height: auto;
-    margin-top: 3rem;
-    margin-left: 2rem;
+    margin-top: 1rem;
+
     display: flex;
   }
   
@@ -80,29 +84,36 @@ html {
     height: auto;
     margin-right: 0.5rem;
   }
+  .imagenn2 {
+    width: 4.5rem;
+    height: auto;
+    margin-right: 0.5rem;
+  }
   
   .menu {
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 10rem;
     height: 100%;
     margin-top: 2rem;
-    margin-left: 0.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border: solid 0.01rem black;
   }
   
   .menu button {
     flex: 1;
-    height: 2rem;
+    height: 1rem;
     border: solid 0.05rem black;
-    margin: 1.5rem 0.4rem;
+    margin: -0.5rem 0 0 0.4rem;
     color: wheat;
- 
+    width: 2rem;
     font-family: 'Courier New', Courier, monospace;
   }
   
   .menn {
-    font-size: 0.8rem;
+    width: 2rem;
+    font-size: -0.10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +122,7 @@ html {
 }
   
   .pie {
-    width: 100%;
+    width: 10rem;
     height: auto;
     background-color: gray;
     border: solid black 0.05rem;
@@ -124,27 +135,659 @@ html {
   .ayuda {
     text-align: center;
   }
-  .comentario-form {
-    margin: 20px auto;
-    max-width: 400px;
+/**/
+  body {
+    font-family: 'Atma';
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 30px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-top: -0.5rem;
   }
-  .comentario-form label,
-  .comentario-form textarea,
-  .comentario-form input[type="submit"] {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+  
+  h1 {
+    text-align: center;
   }
-  .comentario-form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+  
+  input[type="text"] {
+    background-color: #aed9e0;
+    width: 5rem;
+    padding: 5px;
+    margin-left: 1.5rem;
+   
+  }
+  
+  .producto {
+    border: 1px solid #ccc;
     padding: 10px;
-    border: none;
-    cursor: pointer;
+    
   }
+  .item_bus{
+    width: 9.2rem;
+    height: 4rem; 
+    margin: 10px;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+   
+   
+    background-color: rgb(0, 55, 236); 
+    border-radius: 2.5rem;
+  }
+  .nombredelproducto{
+    font-size: 0.4rem;
+    text-align: center;
+    margin-left: 4rem;
+    margin-bottom: 0.2rem;
+    margin-top: -3.2rem;
+  }
+  .nombredelprecio{
+    font-size: 0.4rem;
+    margin-left: 5rem;
+    margin-bottom: 0.2rem;
+    margin-top: -0.1rem;
+  }
+  .nombredelmarca{
+    font-size: 0.4rem;
+    margin-left: 5rem;
+    margin-top: -0.1rem;
+  }
+  .imagenes{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  
+/* Estilos para la ventana emergente */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*imagen de la ventana*/
+.modal-img{
+  width: 5rem;
+  height: 5rem;
+  margin-left: 1rem;
+}
+/*nombre de la ventana*/
+.modal-nombre{
+  font-size: 1rem;
+  text-align: center;
+  
+}
+.modal-descripcion{
+  font-size:0.4rem;
+}
+.modal-precio{
+  font-size:0.4rem;
+}
+#cantidad{
+  background-color: #4CAF50;
+  margin-top: -4rem;
+  width: 2rem;
+  text-align: center;
+}
+/**********************************************carrito*/
+/* Estilos para el carrito */
+/* Estilos para la ventana emergente del carrito */
+/* Estilos para el icono del carrito */
+.titulo_carro{
+  text-align: center;
+  font-size: 1rem;
+}
+.carrito-total{
+  background-color: #007bff;
+  font-size: 0.5rem;
+}
+.carrito-icon {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nombre_car{
+  background-color: #3498db;
+  font-size: 0.5rem;
+  margin-top: 1rem;
+}
+.nombre_cantidad{
+  background-color: #3498db;
+  font-size: 0.5rem;
+}
+.nombre_precio{
+  background-color: #3498db;
+  font-size: 0.5rem;
+}
+/* Agregar estilos para la ventana emergente de finalizar compra */
+.ventana-emergente {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-ventana-emergente {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+  margin-top: -2rem;
+}
+
+.cerrar-ventana-emergente {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 0.1rem;
+}
+.continuarComprando{
+  margin-left: 0.3rem;
+  margin-right: 0.5rem;
+  
+}
+
+/* Estilos para el formulario de finalizar compra */
+.totaldelacompra{
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #3498db;
+}
+.nombrefor{
+  font-size: 0.5rem;
+  margin-top: 0.5rem;
+}
+#formulario-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#formulario-pago input[type="text"] {
+  padding: 5px;
+  margin-left: 2rem;
+
+}
+
+.confirmar-compra {
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+}
+
+/************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+  background-color: rgb(168, 209, 243);
+  padding: 2rem;
+}
+
+/* Estilos para pantallas de tamaño hasta 1366px de ancho */
+@media (min-width: 1366px) {
+  html {
+    background-color: rgb(168, 209, 243);
+    padding: 2rem;
+  }
+  
+  .nombre {
+    font-family: 'Coiny';
+    font-size: 3rem;
+    color: rgb(0, 26, 255);
+    margin-top: -1rem;
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .luo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0.6rem 2rem 1rem 4.8rem;
+   
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .imagenn {
+    width:12rem;
+    height: 12rem;
+    margin-left: 6rem;
+    margin-right: 0.5rem;
+  }
+  .imagenn2 {
+    width:12rem;
+    height: 12rem;
+  
+    margin-right: 0.5rem;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: solid 0.01rem black;
+    
+    text-decoration: none;
+  }
+  
+  .menu button {
+    flex: 1;
+    height: 1rem;
+    border: solid 0.05rem black;
+    margin: -0.5rem 0.5rem 0 0.4rem;
+    color: wheat;
+    width: 8rem;
+    text-decoration: none;
+    font-family: 'Coiny';
+  }
+  
+  .menn {
+    width: 2rem;
+    font-size: 0.5rem;
+    margin-left: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.pie {
+  width: 100%;
+  height: auto;
+  background-color: gray;
+  border: solid black 0.05rem;
+  margin-top: 1rem;
+  font-size: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.ayuda {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Coiny';
+}
+
+.quiens {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: -2.8rem 2rem 0 2rem;
+  width: 2rem;
+  height: 2rem;
+
+}
+
+.ig {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: -2.5rem 2rem 0 30rem;
+  width: 2rem;
+  height: 2rem;
+
+}
+  .karimg {
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+/**/
+  body {
+    font-family: 'Atma';
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: -0.5rem;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input[type="text"] { /*parte donde se escribe*/
+    background-color: #aed9e0;
+    border-top: 0.5rem;
+    border-left: 0.5rem;
+    border-right: 0.5rem;
+    border-bottom:  5px solid black;
+    width: 25rem;
+    margin-left: 3.5rem;
+    padding: 5px;
+   
+  }
+  
+  .producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+  }
+  .item_bus{
+    width: 15rem;
+    height: 10rem; 
+    margin: 10px;
+    margin-top: 0.5rem;
+    margin-left: 9rem;
+
+   
+    background-color: rgb(0, 55, 236); 
+    border-radius: 2.5rem;
+  }
+  .nombredelproducto{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 8rem;
+    margin-bottom: 0.2rem;
+    margin-top: -7rem;
+  }
+  .nombredelprecio{
+    font-size: 0.8rem;
+    margin-left: 9rem;
+    margin-bottom: 0.2rem;
+    margin-top: -0.1rem;
+  }
+  .nombredelmarca{
+    font-size: 0.8rem;
+    margin-left: 9rem;
+    margin-top: -0.1rem;
+  }
+  .imagenes{
+    width: 7rem;
+    height: 7rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  
+/* Estilos para la ventana emergente */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*imagen de la ventana*/
+.modal-img{
+  width: 5rem;
+  height: 5rem;
+  margin-left: 5rem;
+}
+/*nombre de la ventana*/
+.modal-nombre{
+  font-size: 1rem;
+  text-align: center;
+  
+}
+.modal-descripcion{
+  font-size:0.5rem;
+}
+.modal-precio{
+  font-size:0.5rem;
+}
+#cantidad{
+  background-color: #4CAF50;
+  margin-top: -4rem;
+  width: 2rem;
+  text-align: center;
+}
+/**********************************************carrito*/
+/* Estilos para el carrito */
+.titulo_carro{
+  text-align: center;
+  font-size: 1rem;
+}
+.carrito-total{
+ 
+  font-size: 0.5rem;
+}
+.carrito-icon {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nombre_car{
+  font-size: 0.5rem;
+  margin-top: 1rem;
+}
+.nombre_cantidad{
+  font-size: 0.5rem;
+}
+.nombre_precio{
+  font-size: 0.5rem;
+}
+/* Agregar estilos para la ventana emergente de finalizar compra */
+.ventana-emergente {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-ventana-emergente {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+  margin-top: -2rem;
+}
+
+.cerrar-ventana-emergente {
+position: absolute;
+  top: 2.5rem;
+  right: 13.7rem;
+  font-size: 80px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 0.1rem;
+}
+.continuarComprando{
+  margin-left: 0.3rem;
+  margin-right: 0.5rem;
+  
+}
+
+/* Estilos para el formulario de finalizar compra */
+.totaldelacompra{
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #3498db;
+}
+.nombrefor{
+ 
+  font-size: 0.5rem;
+  margin-top: 0.5rem;
+}
+#formulario-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#formulario-pago input[type="text"] {
+  width: 6rem;
+  padding: 5px;
+  margin-left: 1rem;
+
+}
+
+.confirmar-compra {
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
   
   @media screen and (max-width: 768px) {
     .nombre {
@@ -217,4 +860,6 @@ html {
       padding: 10px;
     }
   }
+
+  /**/
   
